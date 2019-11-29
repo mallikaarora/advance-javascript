@@ -1,0 +1,19 @@
+<html>
+<head>
+<h1>Call/Bind/Apply</h1>
+</head>
+<body>
+	<script>
+var Name = {
+name: "Mallika"
+}
+function myFunction(first, second){
+console.log(this);
+return first + " " + this.name + " " + second;
+}
+myFunction.call(Name, "Hi", "how are you?");
+//this is now the detail object
+//returns "Hi Mallika how are you?"
+</script>
+<body>
+</html>

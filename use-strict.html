@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>With "use strict":</h2>
+<script>
+// "use strict";
+// x = 3.14;  // This will cause an error (x is not defined).
+// myFunction();
+
+"use strict";
+myFunction();
+function myFunction() {
+  y = 3.14;   // This will cause an error (y is not defined)
+}
+
+// x = 3.14;    // This will not cause an error.
+// myFunction();
+
+// function myFunction() {
+//   "use strict";
+//   y = 3.14;  // This will cause an error (y is not defined).
+// }
+</script>
+
+</body>
+</html>
